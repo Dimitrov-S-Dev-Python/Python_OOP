@@ -72,10 +72,25 @@ class Board:
         markers_count = 0
 
         for i in range(3):
-            if self.game_board[i][2- i] == player.marker:
+            if self.game_board[i][2 - i] == player.marker:
                 markers_count += 1
 
         return markers_count == 3
+
+    def check_is_tie(self):
+        empty_counter = 0
+
+        for row in self.game_board:
+            empty_counter += row.count(Board.EMPTY_CELL)
+
+        return empty_counter == 0
+
+    def reset_board(self):
+        self.game_board = [[0, 0, 0],
+                           [0, 0, 0],
+                           [0, 0, 0],
+                           ]
+
 
 
 
