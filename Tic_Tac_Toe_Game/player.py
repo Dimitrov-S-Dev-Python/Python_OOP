@@ -44,8 +44,3 @@ class Player:
         move = Move(random_choice)
         print("Computer move (1-9):", move.value)
         return move
-
-
-player = Player()
-print(player.is_human)
-print(player.marker)
