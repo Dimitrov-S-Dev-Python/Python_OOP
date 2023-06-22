@@ -1,6 +1,3 @@
-from move import Move
-from player import Player
-
 
 class Board:
     EMPTY_CELL = 0
@@ -43,7 +40,7 @@ class Board:
 
     def check_is_game_over(self, player, last_move):
         return ((self.check_row(player, last_move))
-                 or (self.check_column(player,last_move))
+                 or (self.check_column(player, last_move))
                  or (self.check_diagonal(player))
                  or (self.check_a_diagonal(player)))
 
