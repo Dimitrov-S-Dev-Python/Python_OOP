@@ -13,7 +13,7 @@ class Move:
     def get_row(self):
         if self._value in (1, 2, 3):
             return 0  # First row
-        elif self._value(4, 5, 6):
+        elif self._value in (4, 5, 6):
             return 1  # Second row
         else:
             return 2  # Third row

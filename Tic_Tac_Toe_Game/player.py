@@ -3,10 +3,11 @@ from move import Move
 
 
 class Player:
+
     PLAYER_MARKER = "X"
     COMPUTER_MARKER = "O"
 
-    def __int__(self, is_human=True):
+    def __init__(self, is_human=True):
         self._is_human = is_human
 
         if is_human:
@@ -41,8 +42,10 @@ class Player:
     def get_computer_move(self):
         random_choice = random.choice(list(range(1, 10)))
         move = Move(random_choice)
-        print("Computer move (1-9:", move.value)
+        print("Computer move (1-9):", move.value)
         return move
 
 
-
+player = Player()
+print(player.is_human)
+print(player.marker)
