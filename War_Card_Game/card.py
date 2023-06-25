@@ -1,3 +1,8 @@
+"""
+Course: Python OOP - Object Oriented Programming for Beginners
+By: Estefania Cassingena Navone
+"""
+
 class Card:
 
     SPECIAL_CARDS = {11: "Jack", 12: "Queen", 13: "King", 14: "Ace"}
@@ -22,10 +27,8 @@ class Card:
         if self.is_special():
             card_description = Card.SPECIAL_CARDS[card_value]
             print(f"{card_description} of {card_suit} {suit_symbol}")
-
         else:
-
             print(f"{card_value} of {card_suit} {suit_symbol}")
-            
+
     def is_special(self):
-        return self.value >= 11
+        return self._value >= 11

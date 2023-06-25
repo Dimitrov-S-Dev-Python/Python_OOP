@@ -1,4 +1,10 @@
+"""
+Course: Python OOP - Object Oriented Programming for Beginners
+By: Estefania Cassingena Navone
+"""
+
 class Suit:
+
     SYMBOLS = {"clubs": "♣", "diamonds": "♦", "hearts": "♥", "spades": "♠"}
 
     def __init__(self, description):
@@ -12,6 +18,3 @@ class Suit:
     @property
     def symbol(self):
         return self._symbol
-
-    
-

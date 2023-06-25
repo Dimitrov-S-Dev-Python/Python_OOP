@@ -1,4 +1,10 @@
+"""
+Course: Python OOP - Object Oriented Programming for Beginners
+By: Estefania Cassingena Navone
+"""
+
 class Player:
+
     def __init__(self, name, deck, is_computer=False):
         self.name = name
         self._deck = deck
@@ -18,15 +24,8 @@ class Player:
     def draw_card(self):
         if not self.has_empty_deck():
             return self._deck.draw()
-
         else:
             return None
 
     def add_card(self, card):
         self._deck.add(card)
-
-
-
-
-
-

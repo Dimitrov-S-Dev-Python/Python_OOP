@@ -1,23 +1,22 @@
-import random
+"""
+Course: Python OOP - Object Oriented Programming for Beginners
+By: Estefania Cassingena Navone
+"""
 
-from War_Card_Game import card
-from War_Card_Game.card import Card
-from War_Card_Game.suit import Suit
+import random
+from card import Card
+from suit import Suit
 
 
 class Deck:
 
-    SUITS = ["clubs", "diamonds", "hearts", "spades"]
+    SUITS = ("clubs", "diamonds", "hearts", "spades")
 
     def __init__(self, is_empty=False):
         self._cards = []
 
         if not is_empty:
             self.build()
-
-    @property
-    def cards(self):
-        return self._cards
 
     @property
     def size(self):
@@ -38,9 +37,8 @@ class Deck:
     def draw(self):
         if self._cards:
             return self._cards.pop()
-
         else:
             return None
 
-    def add(self):
+    def add(self, card):
         self._cards.insert(0, card)
