@@ -1,5 +1,5 @@
 # <p align="center"> ![alt text](https://github.com/Dimitrov-S-Dev-Python/Python_OOP/blob/master/udemy_github.jpg) <p>
-# Python OOP
+# <p align="center">Python OOP</p>
 ## Acquired skills
 - The principles of Object-Oriented Programming (OOP) using Python
 - How classes work and how to create instances from classes
