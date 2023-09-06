@@ -1,4 +1,4 @@
-# <p align="center"> ![alt text](https://github.com/Dimitrov-S-Dev-Python/Python_OOP/blob/master/udemy_logo.jpg) <p>
+# <p align="center"> ![alt text](https://github.com/Dimitrov-S-Dev-Python/Python_OOP/blob/master/udemy_github.jpg) <p>
 # Udemy Course
 Python OOP
 ## Acquired skills
